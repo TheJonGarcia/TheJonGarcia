@@ -1,0 +1,129 @@
+:root {
+    --red: #FF0000;
+    --orange: #FFA600;
+    --yellow: #F0F000;
+    --blue: #0059FF;
+    --cyan: #00F2FF;
+    --black: #080808;
+    --lgray:  #C2BFC9;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--black);
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+header nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link {
+    font-size: 1.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+/* Generic colors and shapes to reuse */
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--lgray);
+}
+
+.red {
+    color: var(--red)
+}
+
+.orange {
+    color: var(--orange)
+}
+
+.yellow {
+    color: var(--yellow)
+}
+
+.blue {
+    color: var(--blue)
+}
+
+.cyan {
+    color: var(--cyan)
+}
+
+.red-line {
+    border-bottom: 1px solid var(--red);
+    border-left: 1px solid var(--red);
+}
+
+.red-line:hover {
+    background-color: var(--red);
+    opacity: .5;
+}
+
+.orange-line {
+    border-bottom: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
+}
+
+.orange-line:hover {
+    background-color: var(--orange);
+    opacity: .5;
+}
+
+.yellow-line {
+    border-bottom: 1px solid var(--yellow);
+    border-left: 1px solid var(--yellow);
+}
+
+.yellow-line:hover {
+    background-color: var(--yellow);
+    opacity: .5;
+}
+
+.blue-line {
+    border-bottom: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+}
+
+.blue-line:hover {
+    background-color: var(--blue);
+    opacity: .5;
+}
+
+.cyan-line {
+    border-bottom: 1px solid var(--cyan);
+    border-left: 1px solid var(--cyan);
+}
+
+.cyan-line:hover {
+    background-color: var(--cyan);
+    opacity: .5;
+}
+
+.large {
+    font-size: 100px;
+    animation-name: changer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+  

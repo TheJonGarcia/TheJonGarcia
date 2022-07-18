@@ -1,0 +1,267 @@
+:root {
+    --red: #FF0000;
+    --orange: #FFA600;
+    --yellow: #F0F000;
+    --blue: #0059FF;
+    --cyan: #00F2FF;
+    --black: #080808;
+    --lgray:  #C2BFC9;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--black);
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+header nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link {
+    font-size: 1.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+.main-title {
+    margin-bottom: 2%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+/*colors to change with js */
+
+.color1 {
+    background-color: var(--red);
+}
+
+.color2 {
+    background-color: var(--orange);
+}
+
+.color3 {
+    background-color: var(--yellow);
+}
+
+.color4 {
+    background-color: var(--blue);
+}
+
+.color5 {
+    background-color: var(--cyan);
+}
+
+.color-body {
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.color-section {
+    width: 20%;
+    height: 70vh;
+    display: inline-block;
+}
+
+.color-section:hover {
+    opacity: .7;
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button1 {
+    background-color: var(--purple);
+    padding: 10px 40px;
+}
+
+/* Generic colors and shapes to reuse */
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--lgray);
+}
+
+.red {
+    color: var(--red)
+}
+
+.orange {
+    color: var(--orange)
+}
+
+.yellow {
+    color: var(--yellow)
+}
+
+.blue {
+    color: var(--blue)
+}
+
+.cyan {
+    color: var(--cyan)
+}
+
+.red-line {
+    border-bottom: 1px solid var(--red);
+    border-left: 1px solid var(--red);
+}
+
+.red-line:hover {
+    background-color: var(--red);
+    opacity: .5;
+}
+
+.orange-line {
+    border-bottom: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
+}
+
+.orange-line:hover {
+    background-color: var(--orange);
+    opacity: .5;
+}
+
+.yellow-line {
+    border-bottom: 1px solid var(--yellow);
+    border-left: 1px solid var(--yellow);
+}
+
+.yellow-line:hover {
+    background-color: var(--yellow);
+    opacity: .5;
+}
+
+.blue-line {
+    border-bottom: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+}
+
+.blue-line:hover {
+    background-color: var(--blue);
+    opacity: .5;
+}
+
+.cyan-line {
+    border-bottom: 1px solid var(--cyan);
+    border-left: 1px solid var(--cyan);
+}
+
+.cyan-line:hover {
+    background-color: var(--cyan);
+    opacity: .5;
+}
+
+.large {
+    font-size: 100px;
+    animation-name: changer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* these are the animations */
+
+@keyframes changer {
+    0% {
+        color: var(--red);
+    }
+    12% {
+        color: var(--orange);
+    }
+    25% {
+        color: var(--yellow);
+    }
+    37% {
+        color: var(--blue);
+    }
+    50% {
+        color: var(--cyan);
+    }
+    62% {
+        color: var(--blue);
+    }
+    75% {
+        color: var(--yellow);
+    }
+    87% {
+        color: var(--orange);
+    }
+    100% {
+        color: var(--red)
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.new {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.btn {
+    text-decoration: none;
+    border: 1px solid var(--red);
+    position: relative;
+    overflow: hidden;
+}
+  
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(255, 0, 0, 0.4);
+}
+  
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(194, 191, 201, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+}
+  
+.btn:hover:before {
+    left: 100%;
+}
+  
+  
